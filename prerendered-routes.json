@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/client",
+    "/demo",
+    "/employee",
+    "/master1"
+  ]
+}
