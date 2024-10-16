@@ -1,0 +1,29 @@
+<div *ngIf="spinner">
+  <div class="spinner-border"></div>
+
+</div>
+<div class="row">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>email</th>
+          <th>first name</th>
+          <th>last name</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of datalist">
+            <td>{{item.id}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.last_name}}</td>
+            <td><img src="{{item.avatar}}"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

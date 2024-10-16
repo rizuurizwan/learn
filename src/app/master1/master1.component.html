@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-6 text-center">
+    <div class="btn-group">
+      <button class="btn btn-success" (click)="change('demo')">Master</button>
+      <button class="btn btn-success" (click)="change('master')">Demo</button>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6" *ngIf="value == 'demo'">
+    <app-demo></app-demo>
+  </div>
+  <div class="col-6" *ngIf="value == 'master'">
+    <app-master></app-master>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-3">
+    <p>{{ obj.name }}</p>
+  </div>
+  <div class="col-3">
+    <p>{{ obj.id }}</p>
+  </div>
+  <div class="col-3">
+    <p>{{ obj.degree }}</p>
+
+  </div>
+</div>
+<div *ngIf="spinner">
+  <div class="spinner-border"></div>
+
+</div>
+<div class="row">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>description</th>
+          <th>rate</th>
+          <th>active</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of datalist">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.rate}}</td>
+            <td>{{item.isActive}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
